@@ -106,6 +106,7 @@ Join in:
 * `mosquitos_vs_year.plot(kind='line')`
 * `mosquitos_vs_year.plot(kind='line',x='year')`
 * `plt.show()`
+
 * `mosquitos_vs_year.plot(kind='bar',x='year')`
 * `plt.show()`
 
@@ -116,6 +117,7 @@ Your turn:
 Join in:
 * `mosquitos_vs_year.plot(kind='line',x='year')`
 * `plt.show()`
+
 * `plt.xlabel('Mosquitos')`
 * `plt.ylabel('Rainfall (mm)')`
 * `plt.title('Mosquitoes like water')`
@@ -141,10 +143,12 @@ Binning sorts data into intervals, or 'bins'.
 
 Join in:
 
-* `bins = [0,200,250,300]``
-* `labels = ['dry','normal','wet']``
-* `pd.cut(data['rainfall'],bins,labels=labels).value_counts().plot(kind='pie')``
-* `plt.show()``
+```python
+bins = [0,200,250,300]
+labels = ['dry','normal','wet']
+pd.cut(data['rainfall'],bins,labels=labels).value_counts().plot(kind='pie')
+plt.show()
+```
 
 ### 7. Adding columns
 
@@ -168,9 +172,12 @@ Join in:
 * `data.hist()`
 * `plt.show()`
 
-* `from pandas.plotting import scatter_matrix`
-* `scatter_matrix(data[['temperature','rainfall','mosquitos']])`
-* `plt.show()`
+And the scatter matrix:
+```python
+from pandas.plotting import scatter_matrix
+scatter_matrix(data[['temperature','rainfall','mosquitos']])
+plt.show()
+```
 
 Correlation matrix:
 * `data.corr()`
