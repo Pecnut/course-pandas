@@ -29,7 +29,10 @@ In short: The setup cost is often worthwhile to allow you powerful data manipula
 
 ### 2. Let's get started
 * Join in. Open a Jupyter Notebook by typing `jupyter notebook` in the terminal.
-* We're going to be using Python 3. If you've got Python 2, that's OK, just start by typing `from __future__ import print_function`.
+* We're going to be using Python 3. If you've got Python 2, that's OK, just start by typing
+```python
+from __future__ import print_function
+```
 * `print("hello world")`
 
 Test it works!
