@@ -28,8 +28,9 @@ Cons of Pandas:
 In short: The setup cost is often worthwhile to allow you powerful data manipulation features, which you can then connect to some useful Python code.
 
 ### 2. Let's get started
-* Join in. Open Python.
-* `print "hello world"`
+* Join in. Open a Jupyter Notebook by typing `jupyter notebook` in the terminal.
+* We're going to be using Python 3. If you've got Python 2, that's OK, just start by typing `from __future__ import print_function`.
+* `print("hello world")`
 
 Test it works!
 
@@ -39,17 +40,17 @@ Test it works!
 OK let's go
 
 * `data = pd.read_csv("A1_mosquito_data.csv")`
-* `print data`
-* `print data.head()`
-* `print data.tail()`
-* `print data.sample()`
-* `print data.describe()`
+* `print(data)`
+* `print(data.head())`
+* `print(data.tail())`
+* `print(data.sample())`
+* `print(data.describe())`
 
 Let's pick out things:
 
-* `print data['year']`
-* `print data[['year','mosquitos']]`
-* `print data[0:2]`
+* `print(data['year'])`
+* `print(data[['year','mosquitos']])`
+* `print(data[0:2])`
 
 Your turn:
 
@@ -59,18 +60,18 @@ Your turn:
 
 Join in:
 
-* `print data[1:2]`
-* `print data.iloc[1]`
-* `print data.iloc[1:3]`
-* `print data['temperature'][0]` (so you can select a single row this way)
-* `print data['temperature'][data['temperature'] > 75]`
-* `print data['temperature'][data['year'] > 2005]`
-* `print data.mean()`
-* `print data.mean().mean()`
-* `print data.mean(1)` (not very useful here)
-* `print data.max()`
-* `print data.idxmin()`
-* `print data['temperature'].min()`
+* `print(data[1:2])`
+* `print(data.iloc[1])`
+* `print(data.iloc[1:3])`
+* `print(data['temperature'][0])` (so you can select a single row this way)
+* `print(data['temperature'][data['temperature'] > 75])`
+* `print(data['temperature'][data['year'] > 2005])`
+* `print(data.mean())`
+* `print(data.mean().mean())`
+* `print(data.mean(1))` (not very useful here)
+* `print(data.max())`
+* `print(data.idxmin())`
+* `print(data['temperature'].min())`
 
 
 Your turn:
@@ -87,12 +88,12 @@ Join in:
 for index, row in data.iterrows():
     temp_in_f = row['temperature']
     temp_in_c = (temp_in_f - 32) * 5 / 9.0
-    print temp_in_c
+    print(temp_in_c)
 ```
 * We can add in:
 ```Python
 if temp_in_c > 23:
-    print "Hotter than 23C!"
+    print("Hotter than 23C!")
 ```
 
 Your turn:
@@ -156,7 +157,7 @@ We can add columns:
 
 Join in:
 * `data['temperature_celsius'] = (data['temperature']-32)*5/9.`
-* `print data.head()`
+* `print(data.head())`
 
 ### 8. Sorting
 
@@ -208,7 +209,7 @@ we see mosquitos = 0.6592*rainfall + 49.8413
 ### 11. Miscellaneous things
 
 We can ignore missing or NaN values:
-* `print data.sum(0, skipna=False)`
+* `print(data.sum(0, skipna=False))`
 
 ### 12. Project
 
