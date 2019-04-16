@@ -28,7 +28,8 @@ Cons of Pandas:
 In short: The setup cost is often worthwhile to allow you powerful data manipulation features, which you can then connect to some useful Python code.
 
 ### 2. Let's get started
-* Join in. Open a Jupyter Notebook by typing `jupyter notebook` in the terminal.
+* Join in. Open a Jupyter notebook by typing `jupyter notebook` in the terminal.
+* Jupyter notebook specific: We're going to want to display our graphs inside the notebook, rather than externally. Do to that, type `%matplotlib inline`.
 * We're going to be using Python 3. If you've got Python 2, that's OK, just start by typing
 ```python
 from __future__ import print_function
@@ -43,17 +44,18 @@ Test it works!
 OK let's go
 
 * `data = pd.read_csv("A1_mosquito_data.csv")`
-* `print(data)`
-* `print(data.head())`
-* `print(data.tail())`
-* `print(data.sample())`
-* `print(data.describe())`
+* `data` (fine within a Jupyter notebook)
+* `print(data)` (otherwise)
+* `data.head()`
+* `data.tail()`
+* `data.sample()`
+* `data.describe()`
 
 Let's pick out things:
 
-* `print(data['year'])`
-* `print(data[['year','mosquitos']])`
-* `print(data[0:2])`
+* `data['year']`
+* `data[['year','mosquitos']]`
+* `data[0:2]`
 
 Your turn:
 
@@ -63,18 +65,18 @@ Your turn:
 
 Join in:
 
-* `print(data[1:2])`
-* `print(data.iloc[1])`
-* `print(data.iloc[1:3])`
-* `print(data['temperature'][0])` (so you can select a single row this way)
-* `print(data['temperature'][data['temperature'] > 75])`
-* `print(data['temperature'][data['year'] > 2005])`
-* `print(data.mean())`
-* `print(data.mean().mean())`
-* `print(data.mean(1))` (not very useful here)
-* `print(data.max())`
-* `print(data.idxmin())`
-* `print(data['temperature'].min())`
+* `data[1:2]`
+* `data.iloc[1]`
+* `data.iloc[1:3]`
+* `data['temperature'][0])` (so you can select a single row this wy)
+* `data['temperature'][data['temperature'] > 75]`
+* `data['temperature'][data['year'] > 2005]`
+* `data.mean()`
+* `data.mean().mean()`
+* `data.mean(1))` (not very useful here)
+* `data.max()`
+* `data.idxmin()`
+* `data['temperature'].min()`
 
 
 Your turn:
@@ -109,10 +111,7 @@ Join in:
 * `mosquitos_vs_year = data[['year','mosquitos']]`
 * `mosquitos_vs_year.plot(kind='line')`
 * `mosquitos_vs_year.plot(kind='line',x='year')`
-* `plt.show()`
-
 * `mosquitos_vs_year.plot(kind='bar',x='year')`
-* `plt.show()`
 
 Your turn:
 
@@ -120,8 +119,6 @@ Your turn:
 
 Join in:
 * `mosquitos_vs_year.plot(kind='line',x='year')`
-* `plt.show()`
-
 * `plt.xlabel('Mosquitos')`
 * `plt.ylabel('Rainfall (mm)')`
 * `plt.title('Mosquitoes like water')`
@@ -136,7 +133,6 @@ Let's group the data by temperature and then plot the mean number of mosquitoes 
 Join in:
 * `mosquito_data_only = data[['temperature','mosquitos']]`
 * `mosquito_data_only.groupby('temperature').mean().plot(kind='line')`
-* `plt.show()`
 
 Your turn:
 * Do the same with the larger data file.
@@ -151,7 +147,6 @@ Join in:
 bins = [0,200,250,300]
 labels = ['dry','normal','wet']
 pd.cut(data['rainfall'],bins,labels=labels).value_counts().plot(kind='pie')
-plt.show()
 ```
 
 ### 7. Adding columns
@@ -160,7 +155,7 @@ We can add columns:
 
 Join in:
 * `data['temperature_celsius'] = (data['temperature']-32)*5/9.`
-* `print(data.head())`
+* `data.head()`
 
 ### 8. Sorting
 
@@ -174,13 +169,11 @@ Join in:
 
 ### 9. Histograms
 * `data.hist()`
-* `plt.show()`
 
 And the scatter matrix:
 ```python
 from pandas.plotting import scatter_matrix
 scatter_matrix(data[['temperature','rainfall','mosquitos']])
-plt.show()
 ```
 
 Correlation matrix:
@@ -194,8 +187,8 @@ x = data["rainfall"]
 y = data["mosquitos"]
 X = sm.add_constant(x) # add y-intercept
 
-model = sm.OLS(y, x).fit() # Ordinary Least Squares
-predictions = model.predict(x)
+model = sm.OLS(y, X).fit() # Ordinary Least Squares
+predictions = model.predict(X)
 
 model.summary()
 ```
@@ -212,7 +205,7 @@ we see mosquitos = 0.6592*rainfall + 49.8413
 ### 11. Miscellaneous things
 
 We can ignore missing or NaN values:
-* `print(data.sum(0, skipna=False))`
+* `data.sum(0, skipna=False)`
 
 ### 12. Project
 
