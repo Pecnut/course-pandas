@@ -1,14 +1,8 @@
 # CM Hub: Data processing with Pandas
 One-day data processing with Pandas course for the CM Hub at Imperial College
 
-* **Part 1:** Pandas
-* **Part 2:** awk
-
-## Part 1. Pandas
-Pandas is a Python package.
-
 ### 0. Before we begin
-* You need Python working on your system.
+* Pandas is a Python package. You need Python working on your system.
 * `pip install pandas`
 * `pip install xlrd`
 * `pip install statsmodels`
@@ -68,7 +62,7 @@ Join in:
 * `data[1:2]`
 * `data.iloc[1]`
 * `data.iloc[1:3]`
-* `data['temperature'][0])` (so you can select a single row this wy)
+* `data['temperature'][0])` (so you can select a single row this way)
 * `data['temperature'][data['temperature'] > 75]`
 * `data['temperature'][data['year'] > 2005]`
 * `data.mean()`
