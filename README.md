@@ -1,5 +1,12 @@
 # CM Hub: Data processing with Pandas
-One-day data processing with Pandas course for the CM Hub at Imperial College
+Data processing with Pandas course for the CM Hub at Imperial College
+
+2 × 2 hour classes
+
+## Prerequisites
+* Students are expected to be familiar with [basic Python](https://www.imperial.ac.uk/computational-methods/cm-hub/intro_python/).
+* Students are welcome to bring their own fully charged laptops to these sessions although there are computers in situ.
+* If using your own laptop, pleasure ensure you have your preferred Python environment installed (we recommend Anaconda), including the modules `pandas`, `xlrd`, `statsmodels`, `matplotlib`. The instructor will use Jupyter Notebooks for demonstrations.
 
 ### 0. Before we begin
 * Pandas is a Python package. You need Python working on your system.
