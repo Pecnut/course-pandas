@@ -10,9 +10,15 @@ Data processing with Pandas course for the CM Hub at Imperial College
 
 ### 0. Before we begin
 * Pandas is a Python package. You need Python working on your system.
-* `pip install pandas`
-* `pip install xlrd`
-* `pip install statsmodels`
+* On your own machine:
+    * `pip install pandas`
+    * `pip install xlrd` (required for pd.read_excel() to work)
+    * `pip install statsmodels`
+* On the college computers:
+    *  `conda install pandas`
+    *  `conda install xlrd`
+    *  `conda install statsmodels`
+    *  Restart the kernel (click Kernel > Restart)
 
 ### 1. Why you might want to use Pandas
 Pros of Pandas:
@@ -98,8 +104,8 @@ for index, row in data.iterrows():
 ```
 * We can add in:
 ```Python
-if temp_in_c > 23:
-    print("Hotter than 23C!")
+if temp_in_c > 27:
+    print("Hotter than 27C!")
 ```
 
 Your turn:
