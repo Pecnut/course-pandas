@@ -228,6 +228,8 @@ You're the director of undergraduate studies. You have to do a few things.
 6. Rumour has it the scores for Lab Work have been made up. Create a scatter matrix for the four courses. What does this tell you?
 7. Do a linear regression analysis to come up with a linear model for the Waves score based on the Relativity score.
 
+## Feedback form
+If you're taking this course through the Graduate School, please fill out [the feedback form](http://bit.ly/computingdatascience1920).
 
-### Licence
+## Licence
 Mosquitos example adapted from Software Carpentry. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
