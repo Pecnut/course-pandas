@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 data = pd.read_excel('exam_results.xlsx')
 
 # 1. Top students
-data['mean'] = data[['Quantum Mechanics','Lab work','Relativity','Waves']].mean(1)
-print data[data['Programme']=='Physics'].sort_values('mean',ascending=False).head(6)
+data['mean'] = data[['Quantum Mechanics','Lab work','Relativity','Waves']].mean(1,skipna=False)
+print(data[data['Programme']=='Physics'].sort_values('mean',ascending=False).head(6))
 
 # 2. Tutor group with highest mean
-print data.groupby('Tutor group').mean().sort_values('mean',ascending=False).head()
+print(data.groupby('Tutor group').mean().sort_values('mean',ascending=False).head())
 
 # 3. Mean of courses
 course_means = data[['Waves','Quantum Mechanics','Lab work','Relativity']].mean().sort_values()
@@ -35,7 +35,7 @@ plt.show()
     if row['Waves'] >= 40:
         courses_passed += 1
     if courses_passed < 4:
-        print "Dear " + row['Forename 1'] + ". You have failed."
+        print("Dear " + row['Forename 1'] + ". You have failed.")
 
 # 6. Histogram
 data.hist('Quantum Mechanics')
