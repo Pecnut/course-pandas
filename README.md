@@ -209,6 +209,12 @@ rainfall       0.6592      0.015     44.965      0.000       0.625       0.693
 ```
 we see mosquitos = 0.6592*rainfall + 49.8413
 
+To get them out: 
+* `model.params['const']`
+* `model.params['rainfall']`
+* `model.pvalues`
+etc
+
 ### 11. Miscellaneous things
 
 We can ignore missing or NaN values:
