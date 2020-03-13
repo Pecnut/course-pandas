@@ -3,6 +3,15 @@ Data processing with Pandas course for the CM Hub at Imperial College
 
 2 × 2 hour classes
 
+## The Graduate School logo
+<img src="/readme-images/grad-school-logo.png">
+
+## On completion of this workshop you will be able to:
+* use Jupyter notebooks to perform simple Pandas data analysis,
+* apply fundamental components of Pandas syntax including data selection and grouping,
+* codereate programs designed to process example data and display simple statistics,
+* interpret common errors and use these to help debug a program.
+
 ## Prerequisites
 * Students are expected to be familiar with [basic Python](https://www.imperial.ac.uk/computational-methods/cm-hub/intro_python/).
 * Students are welcome to bring their own fully charged laptops to these sessions although there are computers in situ.
@@ -209,7 +218,7 @@ rainfall       0.6592      0.015     44.965      0.000       0.625       0.693
 ```
 we see mosquitos = 0.6592*rainfall + 49.8413
 
-To get them out: 
+To get them out:
 * `model.params['const']`
 * `model.params['rainfall']`
 * `model.pvalues`
