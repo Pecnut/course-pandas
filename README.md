@@ -17,7 +17,11 @@ Data processing with Pandas course for the CM Hub at Imperial College
 * Students are welcome to bring their own fully charged laptops to these sessions although there are computers in situ.
 * If using your own laptop, pleasure ensure you have your preferred Python environment installed (we recommend Anaconda), including the modules `pandas`, `xlrd`, `statsmodels`, `matplotlib`. The instructor will use Jupyter Notebooks for demonstrations.
 
-### 0. Before we begin
+## YouTube videos for distance learning
+Timestamps are in the descriptions and correspond to the numbering in this document.
+* Coming soon
+
+## Before we begin
 * Pandas is a Python package. You need Python working on your system.
 * On your own machine:
     * `pip install pandas`
@@ -28,6 +32,8 @@ Data processing with Pandas course for the CM Hub at Imperial College
     *  `conda install xlrd`
     *  `conda install statsmodels`
     *  Restart the kernel (click Kernel > Restart)
+    
+## Part 1
 
 ### 1. Why you might want to use Pandas
 Pros of Pandas:
@@ -228,6 +234,8 @@ etc
 
 We can ignore missing or NaN values:
 * `data.sum(0, skipna=False)`
+
+## Part 2
 
 ### 12. Project
 
