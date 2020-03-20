@@ -9,7 +9,7 @@ Data processing with Pandas course for the CM Hub at Imperial College
 ## On completion of this workshop you will be able to:
 * use Jupyter notebooks to perform simple Pandas data analysis,
 * apply fundamental components of Pandas syntax including data selection and grouping,
-* codereate programs designed to process example data and display simple statistics,
+* create programs designed to process example data and display simple statistics,
 * interpret common errors and use these to help debug a program.
 
 ## Prerequisites
