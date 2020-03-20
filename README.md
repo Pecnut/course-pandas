@@ -140,13 +140,17 @@ Your turn:
 * Using the `data2` dataset, plot the number of mosquitos against the rainfall. What needs fixing?
 
 Join in:
-* `mosquitos_vs_year.plot(kind='line',x='year')`
-* `plt.xlabel('Mosquitos')`
-* `plt.ylabel('Rainfall (mm)')`
+* `mosquitos_vs_rainfall = data[['rainfall','mosquitos']]`
+* `mosquitos_vs_rainfall.plot(kind='scatter',x='rainfall',y='mosquitos')`
+* `plt.xlabel('Rainfall (mm)')`
+* `plt.ylabel('Mosquitos')`
 * `plt.title('Mosquitoes like water')`
 
 Your turn:
-* Plot the number of mosquitoes against the temperature.
+* Plot the number of mosquitos against the temperature.
+
+Join in:
+`plt.savefig('beautiful_graph.pdf')` (directly after plot command in same cell)
 
 ### 5. Grouping
 
