@@ -146,7 +146,7 @@ Join in:
 * `plt.title('Mosquitoes like water')`
 
 Your turn:
-* Plot the number of mosquitoes against the temperature in Celsius.
+* Plot the number of mosquitoes against the temperature.
 
 ### 5. Grouping
 
