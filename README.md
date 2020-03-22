@@ -19,7 +19,7 @@ Data processing with Pandas course for the CM Hub at Imperial College
 
 ## YouTube videos for distance learning
 Timestamps are in the descriptions and correspond to the numbering in this document.
-* Coming soon
+* Part 1: https://www.youtube.com/watch?v=ozxAW2mm7A0
 
 ## Before we begin
 * Pandas is a Python package. You need Python working on your system.
@@ -193,6 +193,18 @@ Join in:
 * `data.sort_values('temperature',ascending=False)`
 * `data.mean().sort_values()`
 
+## Part 2
+
+### Getting up and running again
+* If you want to continue from your previous Jupyter notebook and have managed to re-open it, you will have to click **Cell** > **Run All**.
+* To continue in a new Jupyter notebook, place in the top cell `%matplotlib inline` and in the second cell:
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+data = pd.read_csv("A1_mosquito_data.csv")
+data2 = pd.read_csv("A2_mosquito_data.csv")
+```
+
 ### 9. Histograms
 * `data.hist()`
 
@@ -238,8 +250,6 @@ etc
 
 We can ignore missing or NaN values:
 * `data.sum(0, skipna=False)`
-
-## Part 2
 
 ### 12. Project
 
