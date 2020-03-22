@@ -20,6 +20,8 @@ Data processing with Pandas course for the CM Hub at Imperial College
 ## YouTube videos for distance learning
 Timestamps are in the descriptions and correspond to the numbering in this document.
 * Part 1: https://www.youtube.com/watch?v=ozxAW2mm7A0
+* Part 2: https://www.youtube.com/watch?v=MZuni39oxr0
+* Playlist: https://www.youtube.com/playlist?list=PLcRp2oAQBugtlo4ZjnuzhOCS21SXba4Zq
 
 ## Before we begin
 * Pandas is a Python package. You need Python working on your system.
