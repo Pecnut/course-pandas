@@ -272,3 +272,5 @@ If you're taking this course through the Graduate School, please fill out [the f
 
 ## Licence
 Mosquitos example adapted from Software Carpentry. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+The rest of the work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence](http://creativecommons.org/licenses/by-nc-sa/4.0/).
