@@ -48,3 +48,12 @@ from pandas.plotting import scatter_matrix
 # kde = Kernal density estimation
 scatter_matrix(data[['Quantum Mechanics','Waves','Relativity','Lab work']],diagonal='kde')
 plt.show()
+
+#7. Linear regression
+x = data['Relativity']
+y = data['Waves']
+X = sm.add_constant(x)
+
+model = sm.OLS(y,X,missing='drop').fit() # Note the 'drop' deals with the NaNs
+predictions = model.predict(X)
+model.summary()
