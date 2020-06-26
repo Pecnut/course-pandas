@@ -34,7 +34,7 @@ plt.show()
         courses_passed += 1
     if row['Waves'] >= 40:
         courses_passed += 1
-    if courses_passed < 4:
+    if courses_passed < 3:
         print("Dear " + row['Forename 1'] + ". You have failed.")
 
 # 6. Histogram
